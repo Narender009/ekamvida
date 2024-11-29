@@ -1,0 +1,522 @@
+:root {
+    --background: #f9f9f9;
+    --foreground: #333;
+    --primary: #007bff;
+    --border-muted: #d1d5db;
+    --text-muted-foreground: #6b7280;
+  }
+
+  .hero-faqs {
+    position: relative;
+    background-image: url('/public/images/warrior2-01.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 440px;
+    flex-shrink: 0;
+    display: flex;
+    margin-top: 110px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-faqs::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 45, 45, 0.4); /* Dark overlay with transparency */
+    z-index: 1;
+  }
+  
+  .hero-faqs * {
+    position: relative;
+    z-index: 2; /* Ensure text and other elements appear above the overlay */
+  }
+  
+  .logo4-faqs {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg) scale(0.80); /* Scale the logo down */
+    z-index: 1;
+    background: transparent; /* Fully transparent background */
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+    opacity: .8;
+  }
+  
+  .logo4-faqs img {
+  
+    flex-shrink: 0;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(90%); /* Image filter */
+    clip-path: inherit; /* Ensure the image uses the same clip-path */
+  }
+  
+  
+  
+  
+  .hero-text-faqs {
+    position: absolute;
+    top: 75%;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-text-faqs h1 {
+    width: 940px;
+   
+    color: var(--base-color-text-primary, #F0F0F0);
+    text-align: center;
+    
+    /* Title/Display */
+    font-family: "Playfair Display";
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100px; /* 133.333% */
+  }
+  
+  .hero-text-faqs p {
+    font-size: 1.5rem;
+    margin: 10px 0 20px;
+  }
+  
+  .hero-text-faqs a {
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    display: inline-block;
+  }
+  
+  .hero-text-faqs a:hover {
+    background-color: #007bff; /* Changes background color on hover */
+    color: #fff; /* Changes text color on hover */
+  }
+
+
+
+  /* .image-container {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  } */
+
+  .faq {
+   
+    border-bottom: 1px solid var(--base-color-divider-light, #D8D8D8);;
+    margin-bottom: 1rem;
+  }
+
+  
+  .faq button span img {
+    width: 24px;
+    height: 24px;
+    top: 1%;
+  }
+
+  .faq button {
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    display: flex;
+    
+    align-items: center;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--foreground);
+    background: none;
+    border: none;
+    cursor: pointer;
+    gap: 10px;
+  }
+
+  .faq button  {
+    color: var(--base-color-text-primary, #332D2D);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+    transition: transform 0.2s;
+  }
+
+  .faq button[aria-expanded="true"] span:first-child {
+    transform: rotate(180deg);
+  }
+  .divider-sec {
+    width: 876px;
+    height: 1px;
+    background: var(--base-color-divider-light, #D8D8D8);
+  }
+
+  .faq-content {
+    margin: 32px 120px 56px 40px;
+    flex: 1 0 0;
+    color: var(--base-color-text-secondary, #525252);
+
+    /* Body/Body S */
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px; /* 177.778% */
+    text-align: left;
+  }
+  .faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+  
+  .faq[aria-expanded="true"] .faq-content {
+    max-height: 500px; /* You can set a high enough max-height to fit content */
+  }
+  
+  .faq-content p {
+    margin: 0;
+  }
+
+  .faq[aria-expanded="true"] .faq-content {
+    display: block;
+  }
+
+  .container-faqs {
+    display: flex;
+    height: 100%;
+    background: var(--base-color-bg-primary, #FCFAF4);
+  }
+  
+  .left-container-faqs {
+    width: 21%;
+    background: var(--base-color-bg-tertiary, #F3ECE2);
+    padding: 5rem;
+    position: sticky;
+    top: 0;
+    height: 700px;
+    flex-shrink: 0;
+    overflow: hidden;
+    
+  }
+  .left-container-faqs h1 {
+    color: var(--base-color-text-primary, #332D2D);
+
+    /* Title/Subheading 3 */
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 150% */
+  }
+
+  .left-container-faqs p {
+    width: 340px;
+    margin: 40px 70px 40px 0px;
+    color: var(--base-color-text-tertiary, #777);
+
+    /* Body/Body S */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px; /* 177.778% */
+    overflow: hidden;
+  }
+  
+  .right-container-faqs {
+    width: 70%;
+    padding: 5rem;
+    overflow-y: auto;
+    
+    background: var(--base-color-bg-primary, #FCFAF4);
+  }
+  
+  h1 {
+    margin-top: 0;
+  }
+  
+  .left-container-faqs a {
+    display: inline-flex;
+    padding: 16px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 32px;
+    border: 2px solid var(--button-color-border-default, #7B7092);
+    transition: background-color 0.3s, color 0.3s;
+    color: var(--button-color-label-default, #332D2D);
+    text-align: center;
+
+    /* Buttons/Secondary L */
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 100% */
+    
+  }
+
+
+  .decorative-faqs-right {
+    position: absolute;
+
+    width: 340px;
+    height: 340px;
+    flex-shrink: 0; /* Adjust based on your layout needs */
+    border-radius: 50%; 
+
+}
+.decorative-faqs-right {
+    bottom: 600px;
+   
+    transform: translate(58%, 218%);
+    opacity: 0.5;
+}
+
+.decorative-faqs-right img {
+    width: 350px;
+
+    height: 350px;
+    flex-shrink: 0;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 50%; /* Inherit the circular shape from the container */
+    filter: brightness(1.5); /* Increase brightness by 20% */
+
+}
+
+
+
+@media (max-width: 768px) {
+
+
+  .hero-faqs {
+    height: 300px; /* Adjust the height for smaller screens */
+    margin-top: 50px; /* Reduce margin for mobile */
+    background-size: cover; /* Ensure background is covered properly */
+    background-position: center;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  .hero-text-faqs {
+    top: 65%; /* Adjust the position of the text for mobile */
+    transform: translate(-50%, -50%);
+    padding: 0 20px; /* Add padding for better spacing */
+    text-align: center;
+  }
+
+  .hero-text-faqs h1 {
+   
+    font-size: 40px; /* Reduce font size for mobile */
+    line-height: 50px;
+    width: 170%;
+    text-align: center;
+    margin-left: -50px;
+    
+  }
+
+  .hero-text-faqs p {
+    font-size: 1.2rem; /* Smaller font size for mobile */
+  }
+
+  .hero-text-faqs a {
+    padding: 10px 20px; /* Smaller button for mobile */
+    font-size: 0.9rem;
+  }
+
+  .logo4-faqs {
+    top: 8%; /* Adjust logo position for mobile */
+    transform: translate(-50%, -50%) rotate(90deg) scale(0.6); /* Scale down the logo */
+  }
+
+  .hero-faqs::before {
+    background: rgba(51, 45, 45, 0.5); /* Darker overlay for better contrast */
+  }
+}
+
+/* Extra small mobile view (e.g., phones in portrait mode) */
+@media (max-width: 480px) {
+  .hero-faqs {
+    height: 250px; /* Further reduce height for very small screens */
+    transform: translate(0%, 5%) rotate(0deg) ; /* Scale down the logo */
+  
+  }
+
+  .hero-text-faqs {
+    top: 63%; /* Adjust positioning to fit smaller screens */
+  }
+
+  .hero-text-faqs h1 {
+    font-size: 30px; /* Further reduce font size for extra small devices */
+    line-height: 40px;
+  }
+
+  .hero-text-faqs a {
+    padding: 8px 16px; /* Smaller button padding */
+    font-size: 0.8rem; /* Smaller font size for the button */
+  }
+
+  .logo4-faqs {
+    top: 4%; /* Further adjust logo position */
+    transform: translate(-50%, -50%) rotate(90deg) scale(0.5); /* Further scale down logo */
+  }
+}
+
+
+
+
+/* For screens up to 768px (mobile views) */
+@media (max-width: 768px) {
+  /* General container adjustments */
+  .container-faqs {
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .left-container-faqs,
+  .right-container-faqs {
+    width: 100%;
+  }
+
+
+
+  .right-container-faqs {
+    padding: 16px 0;
+  }
+
+  /* Decorative element adjustments */
+  .decorative-faqs-right {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+    width: 150px;
+    height: 150px;
+  }
+
+  .decorative-faqs-right img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .left-container-faqs {
+    padding: 24px 0;
+    text-align: center;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center content */
+  }
+  
+  /* FAQ heading and paragraph adjustments */
+  .left-container-faqs h1 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 16px;
+  }
+  
+  .left-container-faqs p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 24px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center; /* Ensure text is centered */
+  }
+
+  /* Button adjustments in FAQ */
+  .faq button {
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+
+  .faq button img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Adjust FAQ content padding and margin */
+  .faq-content {
+    margin: 16px 0 24px 50px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .faq-content p {
+    margin-bottom: 12px;
+    
+  }
+
+  /* Divider adjustments */
+  .divider-sec {
+    width: 100%;
+    height: 1px;
+    margin: 16px 0;
+  }
+
+  /* Contact button */
+  .left-container-faqs a {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 24px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 24px;
+    background-color: #7B7092;
+    color: white;
+    text-decoration: none;
+    display: none;
+  }
+  .Questions {
+    display: none;
+  }
+  .Reach-out {
+    display: none;
+  }
+
+
+}
+
+/* Additional styles for very small screens */
+/* @media (max-width: 320px) {
+  .left-container-faqs h1 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .left-container-faqs p,
+  .faq button,
+  .faq-content,
+  .left-container-faqs a {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .decorative-faqs-right {
+    width: 120px;
+    height: 120px;
+  }
+} */

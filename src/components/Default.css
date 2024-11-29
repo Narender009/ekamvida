@@ -1,0 +1,1240 @@
+/* Home.css */
+* 
+#navbar1 {
+  display: flex;
+  width:100%;
+  height: 100px;
+  padding: 16px 12px;
+
+  justify-content: space-between;
+  align-items: flex-start;
+
+  background: transparent;
+  position:fixed;
+  top: 0;
+    
+  }
+  
+  .navbar1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+    width: 100%
+   
+    
+  }
+  
+  .logo1 img {
+    width: 126px;
+    height: 42.025px;
+    background: url('/src/image/bgTransp-logoWhite.png') / cover no-repeat;
+  }
+
+  
+  .menu1 ul {
+    display: flex;
+    /* list-style-type: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    color: white;
+  }
+  
+  .menu1 li {
+    margin-right: 20px;
+    position: relative;
+    padding: 10px;
+  }
+  
+  .menu1 a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+  }
+.dropdown1 {
+  list-style-type: none;
+}
+  
+  .dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown1:hover .dropdown-content1 {
+    display: block;
+  }
+  .buttons1 {
+    display: flex;
+    height: 68px;
+    padding: 12px 0px;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .buttons1 button {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    
+    
+  }
+  
+  .login-register1 {
+    background-color: transparent;
+    border-radius: 32px;
+    border: 2px solid var(--button-color-border-default, white);
+    color: #fff;
+    text-align: center;
+
+    /* Buttons/Secondary M */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 100% */
+  }
+  
+  .join-classes1 {
+    color: #fff;
+    border-radius: 32px;
+    background: var(--button-color-bg-default, #7B7092);
+    color: var(--button-color-label-default, #FFF);
+    text-align: center;
+
+    /* Buttons/Primary M */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 100% */
+  }
+
+  
+  .hero1 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 808px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background: linear-gradient(0deg, rgba(51, 45, 45, 0.30) 0%, rgba(51, 45, 45, 0.30) 100%), url('/src/image/seated-01.jpg') lightgray 0px -128.875px / 100% 118.391% no-repeat;
+  }
+  .logo3 {
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 15px;
+    
+    
+}
+  
+
+  
+  .hero-text1 h1 {
+    color: var(--base-color-text-primary, #F0F0F0);
+    text-align: center;
+    
+    /* Title/Display */
+    font-family: "Playfair Display";
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100px; /* 133.333% */
+  }
+  
+  .hero-text1 p {
+    color: var(--base-color-text-primary, #F0F0F0);
+    text-align: center;
+    
+    /* Title/Subheading 2 */
+    font-family: "Playfair Display";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 128.571% */
+  }
+  
+  .hero-text1 a {
+    display: inline-flex;
+    padding: 16px 20px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 32px;
+    border: 1px solid var(--button-color-border-default, #FFF);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    gap: 8px;
+    color: var(--button-color-label-default, #FFF);
+    text-align: center;
+
+    /* Buttons/Secondary L */
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 100% */
+  }
+  
+  .hero-text1 a:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  #navbar1.scrolled {
+    background-color: #fefef9;
+  }
+  
+  .menu1 a.scrolled-link {
+    color: black;
+  }
+  
+  .login-register1.scrolled-button {
+    background-color: #fefef9;
+    color: black;
+    border-color: #7b7092;
+  }
+  
+
+  .section1 {
+    background: var(--base-color-bg-brand, #383440);
+    width: 100%;
+    height: 552px;
+}
+
+.section-content1 {
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+    padding-top: 50px;
+   
+}
+
+.text-container1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.left-content1 {
+    flex: 1;
+    width: 342px;
+    height: 216px;
+    
+}
+
+.right-content1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 624px;
+    height: 224px;
+   
+}
+
+.left-content1 h1 {
+    
+    color: var(--base-color-text-primary, #F0F0F0);
+    text-align: right;
+    font-family: "Playfair Display";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 72px; /* 128.571% */
+   
+}
+
+.right-content1 p {
+    color: var(--base-color-text-tertiary, #D8D8D8);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 32px; /* 177.778% */
+   
+}
+
+.ct-button {
+    padding: 15px 30px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    display: inline-block;
+    align-self: flex-start;
+}
+
+.ct-button:hover {
+    background-color: #fff;
+    color: #2e2c3a;
+}
+
+.decorative-element-left, .decorative-element-right {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    /* background-image: url('/src/image/bgTransp-logoBlack.png'); */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.decorative-element-left {
+    bottom: 0;
+    left: 0;
+}
+
+.decorative-element-right {
+    bottom: 0;
+    right: 0;
+}
+
+/* @media (max-width: 768px) {
+    .section-content1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-container1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-content, .right-content {
+        max-width: 100%;
+    }
+
+    .left-content h1 {
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+
+    .decorative-element-left, .decorative-element-right {
+        width: 100px;
+        height: 100px;
+    }
+} */
+
+
+        /* header2 css */
+  /* body {
+    font-family: Arial, sans-serif;
+    background-color:   white;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  } */
+
+  
+  /* body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+  } */
+  
+  .container1-s0 {
+    width: 100%;
+    height: 896px;
+    background: var(--base-color-bg-secondary, #F9F6EE);
+  }
+  
+  .header {
+    /* text-align: center; */
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .header h1 {
+    color: var(--base-color-text-brand, #7B7092);
+    text-align: right;
+    font-family: "Playfair Display";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 72px; /* 128.571% */
+  }
+  
+  .header p {
+    color: var(--base-color-text-primary, #332D2D);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 100% */
+  }
+  
+  .classes {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    cursor: grab;
+    padding: 100px 100px;
+    margin-top: 0;
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+  }
+  
+  .classes:active {
+    cursor: grabbing;
+  }
+  
+  .class-card {
+    flex: 0 0 auto;
+    width: 300px; /* Fixed width for each card */
+    margin-right: 20px; /* Space between cards */
+  }
+  
+  .class-card img {
+    transition: transform 0.3s ease;
+  }
+  
+  .class-card button {
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .classes::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .classes {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .classes::after {
+    content: '→';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #7a5c99;
+    animation: bounce 1s infinite;
+  }
+  
+  .nav-btn {
+    display: inline-flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 32px;
+  background: var(--button-color-bg-default, #7B7092);
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  #prev-btn {
+    right: 50px;
+  }
+  
+  #next-btn {
+    right: 0;
+  }
+  
+  /* Existing styles for the slider */
+  .classes {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .classes::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .class-card {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust as needed */
+    margin-right: 20px; /* Adjust for spacing between cards */
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(-50%); }
+    50% { transform: translateY(-60%); }
+  }
+  
+  .class-card {
+    width: 30%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  
+  .class-card img {
+    display: flex;
+    width: 380px;
+    height: 240px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  
+  .class-card h3 {
+    color: var(--card-color-text-heading-primary, #332D2D);
+    text-align: center;
+    
+    /* Title/Subheading 3 */
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 150% */
+  }
+  
+  .class-card p {
+    color: var(--card-color-text-text-tertiary, #777);
+
+    /* Body/Body S */
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px; /* 177.778% */
+    align-self: stretch;
+  }
+  
+  .class-card button {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 32px;
+    border: 1px solid var(--button-color-border-default, #979797);
+    background: var(--button-color-bg-default, rgba(255, 255, 255, 0.00));
+  }
+  
+  .class-card button:hover {
+    background: #6a4b82;
+  }
+  
+
+  /* cta-container css */
+  .cta-section {
+    background-color: #2e2a29;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 84px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+  }
+  .cta-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     gap: 64px;
+    
+  }
+  .cta-text {
+    color: var(--base-color-text-primary, #F0F0F0);
+    text-align: center;
+
+/* Body/Body M */
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px; /* 160% */
+  }
+  .cta-button {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 32px;
+    border: 1px solid var(--button-color-border-default, #FFF);
+  }
+  .cta-button:hover {
+    background: #fff;
+    color: #2e2a29;
+  }
+  .cta-button svg {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+
+
+.container1 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    color: #4f4f4f;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+
+/* container-2 css */
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  /* {% comment %} max-width: 1200px; {% endcomment %} */
+  margin: 0 auto;
+}
+
+.card1 {
+  background: url('/src/image/seated-01.jpg') no-repeat center center/cover;
+  width: 366px;
+  height: 450px;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  color: white;
+  overflow: hidden;
+  border-radius: 0; /* Set border-radius to 0 for rectangular shape */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.card2 {
+  background: url('/src/image/seated-01.jpg') no-repeat center center/cover;
+  width: 366px;
+  height: 450px;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  color: white;
+  overflow: hidden;
+  border-radius: 0; /* Set border-radius to 0 for rectangular shape */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.card3 {
+  background: url('/src/image/seated-01.jpg') no-repeat center center/cover;
+  width: 366px;
+  height: 450px;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  color: white;
+  overflow: hidden;
+  border-radius: 0; /* Set border-radius to 0 for rectangular shape */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.card4 {
+  background: url('/src/image/seated-01.jpg') no-repeat center center/cover;
+  width: 366px;
+  height: 450px;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  color: white;
+  overflow: hidden;
+  border-radius: 0; /* Set border-radius to 0 for rectangular shape */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  /* background: rgba(0, 0, 0, 0.6); */
+  padding: 60px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+.btn {
+  background: transparent;
+  color: #fff;
+  border: 3px solid #fff;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 25px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  /* margin-right: 100px; */
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* .container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+} */
+
+.card1, .card2, .card3, .card4 {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+/* Zoom effect on card hover */
+.card1:hover, .card2:hover, .card3:hover, .card4:hover {
+  transform: scale(1.05);
+  cursor: zoom-in;
+}
+
+/* Change button background color when hovering over the card */
+.card1:hover .btn, 
+.card2:hover .btn, 
+.card3:hover .btn, 
+.card4:hover .btn {
+  background-color:blueviolet;
+}
+
+/* Additional zoom effect when hovering directly over the button */
+.btn {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+
+/* css container testimoneyal */
+/* .body{
+    background-color: white;
+    padding-top: 6%;
+} */
+
+
+.testimonial-container {
+  background: var(--base-color-bg-tertiary, #F3ECE2);
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  /* max-width: 600px; */
+  width:100%;
+  height: 542px;
+ 
+
+  
+  
+}
+.testimonial-container h3 {
+  color: var(--base-color-text-primary, #332D2D);
+  text-align: center;
+  
+  /* Body/Body S */
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150px; /* 177.778% */
+
+}
+.testimonial-container p {
+  width: 800px;
+  color: var(--base-color-text-primary, #332D2D);
+  font-family: "Playfair Display";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  margin-left: 300px;
+
+}
+.testimonial-container .author {
+  color: var(--base-color-text-primary, #332D2D);
+  text-align: center;
+  
+  /* Body/Body S */
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px; /* 177.778% */
+}
+.testimonial-container .pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.testimonial-container .pagination span {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  fill: var(--base-color-graphics-tertiary, #CACACA);
+}
+.testimonial-container .pagination .active {
+  background-color: #7d7265;
+}
+.testimonial-container .share-btn {
+  margin-top: 1.5rem;
+}
+.testimonial-container .share-btn button {
+  display: inline-flex;
+  padding: 16px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 32px;
+border: 1px solid var(--button-color-border-default, #979797);
+background: var(--button-color-bg-default, rgba(255, 255, 255, 0.00));
+  /* margin-right: 100px; */
+  transition: background-color 0.3s, color 0.3s;
+}
+.testimonial-container .share-btn button:hover {
+  background-color: #7d7265;
+  color: #fff;
+}
+
+
+/* container-6 */
+
+.container6 {
+  width: 100%;
+  height: 610px;  
+  background: var(--base-color-bg-tertiary, #F3ECE2);
+}
+.image-container-6 {
+  flex: 1.5;
+}
+.image-container-6 img {
+  display: flex;
+  width: 762px;
+  height: 610px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.text-container {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text-container h1 {
+  color: var(--base-color-text-brand, #7B7092);
+  text-align: center;
+  
+  /* Title/Heading 1 */
+  font-family: "Playfair Display";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px; /* 135% */
+}
+.text-container p {
+  width: 430px;
+  color: var(--base-color-text-tertiary, #777);
+
+  /* Body/Body S */
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px; /* 177.778% */
+}
+.read-more {
+  margin-top: 20px;
+}
+.read-more a {
+  display: inline-flex;
+  padding: 16px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 32px;
+border: 2px solid var(--button-color-border-default, #7B7092);
+  transition: background-color 0.3s, transform 0.3s;
+}
+.read-more a:hover {
+  background-color: #5a407e;
+  transform: scale(1.05);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css";
+/* 
+instagram container */
+.nav-button {
+  position: absolute;
+  top: 59.10%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  color: white;
+  font-size: 43px;
+  padding: 125px 25px;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  
+}
+
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-button.left {
+  right: auto;
+  left: 10px;
+}
+  
+.instagram-feed {
+  display: flex;
+  transition: transform 0.5s ease;
+  scroll-behavior: smooth;
+}
+
+/* Your existing CSS styles... */
+
+
+
+.instagram-section {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 556px;
+  background: var(--base-color-bg-brand, #383440);
+  
+}
+
+.instagram-feed {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.instagram-overlay {
+  flex: 0 0 auto;
+  width: 300px; /* Adjust as needed */
+  margin-right: 20px; /* Adjust spacing between images */
+}
+
+.instagram-overlay img {
+  width: 100%;
+  height: auto;
+}
+
+.instagram-section h2 {
+  color: var(--base-color-text-brand, #F0F0F0);
+  text-align: center;
+  
+  /* Title/Subheading 1 */
+  font-family: "Playfair Display";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 128.571% */
+}
+.instagram-section p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.instagram-feed {
+  display: flex;
+  
+  /* overflow-x: scroll; */
+}
+.instagram-feed img {
+  width: 100%;
+  height: 300px; /* Set a specific height for rectangular shape */
+  object-fit: cover; /* Ensure the image covers the entire container */
+  max-width: 500px; /* Increased from 300px to 500px */
+  /* margin: 0 5px; */
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.instagram-feed .instagram-overlay {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 5px;
+}
+.instagram-feed .instagram-overlay img {
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.instagram-feed .instagram-overlay .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  border-radius: 10px;
+  transition: opacity 0.3s;
+}
+.instagram-feed .instagram-overlay:hover .overlay {
+  opacity: 1;
+}
+.instagram-feed .instagram-overlay .overlay .instagram-text {
+  text-align: center;
+}
+.instagram-feed .instagram-overlay .overlay .instagram-text p {
+  margin: 0;
+}
+.instagram-feed {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+.instagram-feed::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+
+
+
+
+
+
+.container-grid {
+  width: 100%;
+  height: 788px;
+  background: var(--base-color-bg-secondary, #F9F6EE);
+}
+.container-grid header {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.container-grid header h1 {
+  color: var(--base-color-text-brand, #7B7092);
+  text-align: center;
+  
+  /* Title/Heading 1 */
+  font-family: "Playfair Display";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px; /* 135% */
+}
+.container-grid header p {
+  color: var(--base-color-text-tertiary, #777);
+  text-align: center;
+  
+  /* Body/Body M */
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px; /* 160% */
+  width: 854px;
+}
+.grid-g {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+.card-g {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0.00) 24.95%, #1A1A1A 96.04%);
+    
+}
+.card-g img {
+  width: 360px;
+  height: 450px;
+  
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  
+}
+
+.card-content-g {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   
+    color: white;
+    padding: 20px;
+}
+.card-g h2 {
+  color: var(--card-color-text-heading-primary, #FFF);
+  text-align: left;
+  
+  /* Title/Subheading 1 */
+  font-family: "Playfair Display";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 128.571% */
+}
+.card-g p {
+  color: var(--card-color-text-text-primary, #FFF);
+
+  /* Body/Body XXS */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 150% */
+}
+.btn-g {
+    text-decoration: none;
+    display: flex;
+    padding: 16px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 32px;
+    border: 2px solid var(--button-color-border-default, #FFF);
+    color: var(--button-color-label-default, #FFF);
+    text-align: center;
+
+    /* Buttons/Primary L */
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 100% */
+
+}
+
+
+
+
+
+/* Add this to your CSS file */
+.customer-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  background-color: none;
+
+
+}
+.account-menu {
+  position: absolute;
+  top: 60%;
+  right: 17%;
+  width: 100px;
+
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+  top: 70%;
+}
+
+.account-menu a, .account-menu button {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.account-menu a:hover, .account-menu button:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+.dropdown1 > a {
+  position: relative;
+}
+
+.dropdown1 > a .arrow {
+  display: inline-block;
+  transition: transform 0s ease;
+}
+
+.dropdown1:hover > a .arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-content1 {
+  display: none;
+  /* Add your existing dropdown styles here */
+}
+
+.dropdown-content1.show {
+  display: block;
+}
+
+
+
+

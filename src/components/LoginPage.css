@@ -1,0 +1,260 @@
+/* Container styling */
+.min-h-screen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9fafb;
+    padding: 1rem;
+  }
+  
+  /* Card styling */
+  .w-full {
+    width: 87%;
+  }
+  
+  .max-w-md {
+    max-width: 28rem;
+  }
+  
+  .bg-white {
+    background-color: #ffffff;
+  }
+  
+  .rounded-2xl {
+    border-radius: 1rem;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .p-8 {
+    padding: 2rem;
+  }
+  
+  /* Icon Circle styling */
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .w-16 {
+    width: 4rem;
+  }
+  
+  .h-16 {
+    height: 4rem;
+  }
+  
+  .bg-blue-100 {
+    background-color: #ebf5ff;
+  }
+  
+  .rounded-full {
+    border-radius: 9999px;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .mb-6 {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Icon styling */
+  .text-blue-600 {
+    color: #2563eb;
+  }
+  
+  .w-8,
+  .h-8 {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  /* Typography styling */
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-gray-900 {
+    color: #1f2937;
+  }
+  
+  .mb-2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .text-gray-600 {
+    color: #4b5563;
+  }
+  
+  .mb-8 {
+    margin-bottom: 2rem;
+  }
+  
+  /* Form styling */
+  .space-y-6 > *:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+  
+  .space-y-2 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+  
+  .block {
+    display: block;
+  }
+  
+  .text-sm {
+    font-size: 0.875rem;
+  }
+  
+  .font-medium {
+    font-weight: 500;
+  }
+  
+  .text-gray-700 {
+    color: #374151;
+  }
+  
+  .space-y-2 label {
+    text-align: left;
+  }
+  
+  /* Input and Button styling for Consistent Width */
+  .input-button-width {
+    width: 100%;
+    max-width: 24rem;
+  }
+  
+  .relative {
+    position: relative;
+  }
+  
+  .relative input {
+    padding: 1rem;
+    padding-left: 2.5rem;
+  }
+  
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .border {
+    border-width: 1px;
+  }
+  
+  .border-gray-300 {
+    border-color: #d1d5db;
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
+  .focus\:ring-2:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #2563eb;
+  }
+  
+  .focus\:ring-blue-500:focus {
+    box-shadow: 0 0 0 2px #2563eb;
+  }
+  
+  .focus\:border-transparent:focus {
+    border-color: transparent;
+  }
+  
+  /* Placeholder icon styling */
+  .pl-10 {
+    padding-left: 2.5rem;
+  }
+  
+  .absolute {
+    position: absolute;
+  }
+  
+  .left-3 {
+    left: 0.75rem;
+  }
+  
+  .top-1\/2 {
+    top: 50%;
+  }
+  
+  .-translate-y-1\/2 {
+    transform: translateY(-50%);
+  }
+  
+  .text-gray-400 {
+    color: #9ca3af;
+  }
+  
+  /* Error message styling */
+  .text-red-500 {
+    color: #ef4444;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Button styling */
+  .button-style {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-style:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .button-style:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #2563eb;
+  }
+  
+  /* Sign-up link styling */
+  .text-gray-600 {
+    color: #4b5563;
+  }
+  
+  .text-blue-600 {
+    color: #2563eb;
+  }
+  
+  .hover\:text-blue-700:hover {
+    color: #1d4ed8;
+  }
+  

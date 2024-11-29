@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #f9f6ee;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+
+}
+
+.logo img {
+    width: 126px;
+    height: 42.025px;
+}
+
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    margin-right: 150px;
+}
+
+.menu li {
+    margin-right: 10px;
+    position: relative;
+    padding: 10px;
+}
+
+.menu a {
+  color: var(--link-color-default, #332D2D);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;color: var(--link-color-default, #332D2D);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.buttons button {
+    padding: 16px;
+    gap: 4px;
+    border-radius: 32px;
+    margin-left: 10px;
+    cursor: pointer;
+    /* border: none; */
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.login-register-nav {
+    background-color: transparent;
+    color:black;
+    border: 1px solid #7b7092;
+}
+
+.join-classes-nav {
+    background: var(--button-color-bg-default, #7B7092);
+    color: #fff;
+    border: none;
+    
+}
+.dropdown > a {
+    position: relative;
+  }
+  
+  .dropdown > a .arrow {
+    display: inline-block;
+    transition: transform 0s ease;
+  }
+  
+  .dropdown:hover > a .arrow {
+    transform: rotate(180deg);
+  }
+  
+  .dropdown-content {
+    display: none;
+    /* Add your existing dropdown styles here */
+  }
+  
+  .dropdown-content.show {
+    display: block;
+  }
+  .fontawesome {
+    padding-right: 5px;
+  }
+
+
+  @media screen and (min-width: 768px) {
+    .menu-icon, .close-icon {
+      display: none;
+    }
+  
+  }
+  
+  /* Override the 0% width outside of media query */
+  .login-register-first {
+    width: auto; /* or 100%, depending on your default layout */
+  }
+
+
+  @media screen and (max-width: 768px) {
+    /* Navbar container */
+    #navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      transition: background-color 0.3s ease;
+    }
+  
+    .navbar {
+      justify-content: space-between;
+      padding: 20px 15px;
+    }
+  
+    .logo {
+      flex: 1;
+    }
+  
+    /* Mobile menu icon */
+    .navbar .mobile-menu-icon {
+      display: block;
+      font-size: 24px;
+      cursor: pointer;
+      color: black;
+    }
+  
+    /* Hide regular menu and buttons by default */
+    .menu:not(.show-mobile),
+    .buttons:not(.show-mobile) {
+      display: none;
+    }
+  
+    /* Show mobile menu when clicked */
+    .menu.show-mobile,
+    .buttons.show-mobile {
+      display: block;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      width: 100%;
+    }
+  
+    .menu.show-mobile {
+      height: 800px;
+      max-height: calc(100vh - 60px);
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      background-color: #f9f6ee;
+    }
+  
+    /* Menu styles */
+    .menu.show-mobile ul {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+  
+    .menu.show-mobile li {
+      margin: 11px 0px;
+      padding: 0;
+      width: 100%;
+    }
+  
+    .menu.show-mobile a,
+    .menu.show-mobile .dropdown-first > a,
+    .menu.show-mobile .dropdown-content-first a {
+      display: block;
+      text-align: left;
+      padding: 12px 15px;
+      width: 100%;
+      box-sizing: border-box;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  
+    .menu.show-mobile .dropdown-first > a,
+    .menu.show-mobile .dropdown-content-first a {
+      display: flex;
+      justify-content: none;
+      align-items: center;
+      text-align: left;
+      padding: 12px 15px;
+      width: 100%;
+      box-sizing: border-box;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  
+    .menu.show-mobile .arrow {
+      margin-left: 10px; /* Add space between text and arrow */
+    }
+  
+  
+  
+    /* Dropdown styles */
+    .menu.show-mobile .dropdown-content-first {
+      position: static;
+      display: none;
+      background-color: #f0ede5;
+      box-shadow: none;
+      width: 100%;
+    }
+  
+    .menu.show-mobile .dropdown-content-first.show {
+      display: block;
+    }
+  
+    .menu.show-mobile .dropdown-content-first a {
+      padding-left: 30px;
+    }
+  
+    .menu.show-mobile .arrow {
+      float: right;
+     
+      
+    }
+  
+    /* Button styles */
+    .buttons.show-mobile {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 580px;
+      
+     
+    }
+  
+  
+    .buttons.show-mobile .login-register-nav,
+    .buttons.show-mobile .join-classes-nav {
+      max-width: 350px;
+      margin: 10px 20px;
+      padding: 12px;
+      font-size: 16px;
+      text-align: center;
+      border: 2px solid var(--button-color-bg-default, #7B7092);
+      color: black;
+      cursor: pointer;
+      text-decoration: none;
+      box-sizing: border-box;
+    }
+    .buttons.show-mobile .login-register-nav,
+    .buttons.show-mobile .join-classes-nav {
+      width: 100%;
+      max-width: 200px;
+    }
+  
+    .buttons.show-mobile .join-classes {
+      background-color: #7B7092;
+      color: white;
+    }
+  }
+
+
+  @media screen and (min-width: 769px) {
+    .mobile-menu-icon {
+      display: none;
+    }
+  }

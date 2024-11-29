@@ -1,0 +1,233 @@
+.containerbb {
+    display: flex;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.p-6-cb {
+    padding: 25px;
+}
+
+.bg-card-cb {
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.text-card-foreground-cb {
+    color: #333;
+}
+
+.text-muted-foreground-cb {
+    color: #6c757d;
+}
+
+.text-primary-cb {
+    color: #007bff;
+}
+
+.text-primary-foreground-cb {
+    color: #fff;
+}
+
+.text-secondary-foreground-cb {
+    color: #fff;
+}
+
+.bg-muted-cb {
+    background-color: #f1f3f5;
+}
+
+.bg-primary-cb {
+    background-color: #007bff;
+}
+
+.bg-secondary-cb {
+    background-color: #6c757d;
+}
+
+.border-cb {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.border-border-cb {
+    border-color: #dee2e6;
+}
+
+.mt-1-cb {
+    margin-top: 4px;
+}
+
+.mt-4-cb {
+    margin-top: 16px;
+}
+
+.mb-2-cb {
+    margin-bottom: 8px;
+}
+
+.mb-4-cb {
+    margin-bottom: 16px;
+}
+
+.mb-6-cb {
+    margin-bottom: 24px;
+}
+
+.flex-cb {
+    display: flex;
+    gap: 10px;
+}
+
+.flex-1-cb {
+    flex: 1;
+}
+
+.space-x-2-cb > :not(:last-child) {
+    margin-right: 8px;
+}
+
+.space-x-4-cb > :not(:last-child) {
+    margin-right: 16px;
+}
+
+.space-y-2-cb > :not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.space-y-4-cb > :not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.inline-block-cb {
+    display: inline-block;
+}
+
+.block-cb {
+    display: block;
+}
+
+.w-full-cb {
+    width: 100%;
+}
+
+.p-2-cb {
+    padding: 8px;
+}
+
+.font-semibold-cb {
+    font-weight: 600;
+}
+
+.text-xl-cb {
+    font-size: 1.25rem;
+}
+
+.text-sm-cb {
+    font-size: 0.875rem;
+}
+
+.text-xs-cb {
+    font-size: 0.75rem;
+}
+
+.float-right-cb {
+    float: right;
+}
+
+.items-center-cb {
+    align-items: center;
+}
+
+.justify-between-cb {
+    justify-content: space-between;
+}
+
+.hover\:bg-primary\/80-cb:hover {
+    background-color: rgba(0, 123, 255, 0.8);
+}
+
+.hover\:bg-secondary\/80-cb:hover {
+    background-color: rgba(108, 117, 125, 0.8);
+}
+
+.font-medium-cb {
+    font-weight: 500;
+}
+
+.pb-4-cb {
+    padding-bottom: 16px;
+}
+
+
+
+/* Ensure border is displayed correctly for inputs */
+input[type="text"], input[type="email"], select, textarea {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+input[type="checkbox"] {
+    border: 1px solid #dee2e6;
+    width: auto;
+}
+
+select {
+    width: auto;
+    flex: none;
+}
+/* BookClasses.css */
+
+
+/* .dropdown {
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+} */
+
+.dropdown-button-cb {
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-arrow-cb {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-arrow-cb.active {
+    transform: rotate(180deg);
+}
+
+.dropdown-button-cb:hover {
+    background-color: #f8f8f8;
+}
+
+.dropdown-content-cb {
+    display: none;
+    padding: 15px;
+    background-color: white;
+}
+
+.dropdown.active .dropdown-content-cb {
+    display: block;
+}
+
+.rounded-cb {
+    border-radius: 16px;
+    padding: 12px;
+    border: #e0e0e0;
+    
+}

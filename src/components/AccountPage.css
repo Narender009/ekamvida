@@ -1,0 +1,407 @@
+/* Main Container */
+.account-page-container {
+    background-color: white;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  /* Alert Messages */
+  .account-alert {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    animation: slideIn 0.3s ease-in-out;
+  }
+  
+  .account-alert-error {
+    background-color: #fee2e2;
+    color: #dc2626;
+    border: 1px solid #fecaca;
+  }
+  
+  .account-alert-success {
+    background-color: #dcfce7;
+    color: #16a34a;
+    border: 1px solid #bbf7d0;
+  }
+  
+  /* Navigation Buttons */
+  .account-nav-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    
+  }
+
+
+  
+  .account-nav-btn {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    
+  }
+  
+
+  
+  .account-nav-btn:active {
+    transform: translateY(0);
+  }
+  
+  .account-nav-icon {
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .account-nav-btn:hover .account-nav-icon {
+    opacity: 1;
+  }
+  
+  /* Cards */
+  .account-profile-card,
+  .account-password-card,
+  .account-delete-card {
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .account-profile-card:hover,
+  .account-password-card:hover,
+  .account-delete-card:hover {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  }
+  
+  /* Card Elements */
+  .account-card-header {
+    padding: 1.5rem 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    align-items: self-start;
+  }
+  
+  .account-card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.5rem;
+  }
+  
+  .account-card-desc {
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+  
+  .account-card-content {
+    padding: 1.5rem;
+  }
+  
+  /* Forms */
+  .account-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .account-input-wrapper {
+    width: 100%;
+  }
+  
+  .account-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .account-input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+  }
+  
+  .account-input:hover {
+    border-color: #d1d5db;
+  }
+  
+  /* Buttons */
+  .account-submit-btn,
+  .account-delete-btn,
+  .account-logout-btn {
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .account-submit-btn {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  .account-submit-btn:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .account-submit-btn:disabled {
+    background-color: #93c5fd;
+    cursor: not-allowed;
+  }
+  
+  .account-delete-btn {
+    background-color: #dc2626;
+    color: white;
+  }
+  
+  .account-delete-btn:hover {
+    background-color: #b91c1c;
+  }
+  
+  .account-delete-btn:disabled {
+    background-color: #fca5a5;
+    cursor: not-allowed;
+  }
+  
+  .account-logout-btn {
+    background-color: #f3f4f6;
+    color: #374151;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .account-logout-btn:hover {
+    background-color: #e5e7eb;
+  }
+  
+  .account-logout-btn:disabled {
+    background-color: #f3f4f6;
+    color: #9ca3af;
+    cursor: not-allowed;
+  }
+  
+  .account-logout-icon {
+    margin-right: 0.5rem;
+  }
+  
+  /* Warning Text */
+  .account-warning {
+    font-size: 0.875rem;
+    color: #dc2626;
+    font-weight: 500;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 640px) {
+    .account-page-container {
+      padding: 1rem;
+    }
+  
+    .account-nav-buttons {
+      flex-direction: column;
+    }
+  
+    .account-nav-btn {
+      width: 100%;
+    }
+  
+    .account-card-header {
+      padding: 1rem 1rem 0;
+    }
+  
+    .account-card-content {
+      padding: 1rem;
+    }
+  }
+  
+  /* Animations */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Focus Styles for Accessibility */
+  .account-nav-btn:focus,
+  .account-input:focus,
+  .account-submit-btn:focus,
+  .account-delete-btn:focus,
+  .account-logout-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #2563eb, 0 0 0 4px rgba(37, 99, 235, 0.1);
+  }
+  
+  /* Dark Mode Support */
+  @media (prefers-color-scheme: dark) {
+    .account-page-container {
+      background-color: #1f2937;
+    }
+  
+    .account-profile-card,
+    .account-password-card,
+    .account-delete-card {
+      background-color: #111827;
+    }
+  
+    .account-card-title {
+      color: #f3f4f6;
+    }
+  
+    .account-card-desc {
+      color: #9ca3af;
+    }
+  
+    .account-input {
+      background-color: #374151;
+      border-color: #4b5563;
+      color: #f3f4f6;
+    }
+  
+    .account-input:hover {
+      border-color: #6b7280;
+    }
+  
+    .account-logout-btn {
+      background-color: #374151;
+      border-color: #4b5563;
+      color: #f3f4f6;
+    }
+  
+    .account-logout-btn:hover {
+      background-color: #4b5563;
+    }
+  
+    .account-alert-error {
+      background-color: rgba(220, 38, 38, 0.2);
+      border-color: rgba(220, 38, 38, 0.3);
+    }
+  
+    .account-alert-success {
+      background-color: rgba(22, 163, 74, 0.2);
+      border-color: rgba(22, 163, 74, 0.3);
+    }
+  }
+
+
+/* Main Container */
+.account-page-container {
+    background-color: white;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  /* Profile Information */
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .profile-info input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .profile-info input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+  }
+  
+  .profile-info input:hover {
+    border-color: #d1d5db;
+  }
+  
+  /* Buttons */
+  .update-profile-btn,
+  .change-password-btn,
+  .delete-account-btn {
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .update-profile-btn {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  .update-profile-btn:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .update-profile-btn:disabled {
+    background-color: #93c5fd;
+    cursor: not-allowed;
+  }
+  
+  .change-password-btn {
+    background-color: #f3f4f6;
+    color: #374151;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .change-password-btn:hover {
+    background-color: #e5e7eb;
+  }
+  
+  .change-password-btn:disabled {
+    background-color: #f3f4f6;
+    color: #9ca3af;
+    cursor: not-allowed;
+  }
+  
+  .delete-account-btn {
+    background-color: #dc2626;
+    color: white;
+  }
+  
+  .delete-account-btn:hover {
+    background-color: #b91c1c;
+  }
+  
+  .delete-account-btn:disabled {
+    background-color: #fca5a5;
+    cursor: not-allowed;
+  }
+  
+  /* Logout Button */
+  .logout-btn {
+    display: block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1rem;
+    background-color: #f3f4f6;
+    color: #374151;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .logout-btn:hover {
+    background-color: #e5e7eb;
+  }
+  
+  .logout-btn:disabled {
+    background-color: #f3f4f6;
+    color: #9ca3af;
+    cursor: not-allowed;
+  }
+  
+  .logout-icon {
+    margin-right: 0.5rem;
+  }

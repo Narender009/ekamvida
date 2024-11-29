@@ -1,0 +1,40 @@
+.container-bs {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.heading-bs {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.details-bs {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.details-bs p {
+    margin: 5px 0;
+}
+
+.btn-bs {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-bs:hover {
+    background-color: #0056b3;
+}

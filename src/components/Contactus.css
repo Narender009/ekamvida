@@ -1,0 +1,596 @@
+* {
+ margin: 0px;
+ padding: 0px;
+}
+
+.hero-seatedfold {
+  position: relative;
+  background-image: url('/public/images/seatedfold-01.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 440px;
+  flex-shrink: 0;
+  display: flex;
+  margin-top: 110px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-seatedfold::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 45, 45, 0.4); /* Dark overlay with transparency */
+  z-index: 1;
+}
+
+.hero-seatedfold * {
+  position: relative;
+  z-index: 2; /* Ensure text and other elements appear above the overlay */
+}
+
+.logo-seatedfold {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg) scale(0.80); /* Scale the logo down */
+  z-index: 1;
+  background: transparent; /* Fully transparent background */
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+  opacity: .8;
+}
+
+.logo-seatedfold img {
+
+  flex-shrink: 0;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(90%); /* Image filter */
+  clip-path: inherit; /* Ensure the image uses the same clip-path */
+}
+
+
+
+
+.hero-text-seatedfold {
+  position: absolute;
+  top: 75%;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text-seatedfold h1 {
+  color: var(--base-color-text-primary, #F0F0F0);
+  text-align: center;
+  
+  /* Title/Display */
+  font-family: "Playfair Display";
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100px; /* 133.333% */
+}
+
+.hero-text-seatedfold p {
+  font-size: 1.5rem;
+  margin: 10px 0 20px;
+}
+
+.hero-text-seatedfold a {
+  padding: 15px 30px;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.hero-text-seatedfold a:hover {
+  background-color: #007bff; /* Changes background color on hover */
+  color: #fff; /* Changes text color on hover */
+}
+
+
+
+.bg-container {
+  display: flex;
+  background: var(--base-color-bg-primary, #FCFAF4);
+ 
+  
+
+}
+  .contact-us-container {
+    display: flex;
+    gap: 1rem; /* Adds space between the two containers */
+    width:50%;
+    height:100vh;
+   
+   
+  }
+  
+  .container-cotact-us {
+    flex: 1; /* Takes up 1 part of the available space */ 
+  }
+  
+  .container-cotact-us {
+    flex: 1; /* Takes up 1 part of the available space */
+    width:20%; 
+    background: var(--base-color-bg-primary, #FCFAF4);
+  }
+  
+ 
+  .bg {
+   
+    overflow: hidden;
+    position: relative;
+    padding: 4rem;
+    width:10%;
+    background: var(--base-color-bg-tertiary, #F3ECE2);
+    flex: 1; /* Takes up all available space */
+  }
+
+
+
+  .text-2xl {
+    color: var(--base-color-text-primary, #332D2D);
+
+    /* Title/Subheading 3 */
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 150% */
+  }
+
+  .text-xl {
+    color: var(--base-color-text-primary, #332D2D);
+
+    /* Title/Subheading 3 */
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 150% */
+  }
+
+  .not-italic {
+    font-style: normal;
+  }
+  .not-italic p {
+    color: var(--base-color-text-tertiary, #777);
+
+    /* Body/Body XXS */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px; /* 150% */
+  }
+  .flex {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .w-6 {
+    width: 1.5rem;
+  }
+
+  .h-6 {
+    height: 1.5rem;
+  }
+  .mb-4 {
+    width: 340px;
+    margin: 40px 80px 24px 0px;
+    color: var(--base-color-text-tertiary, #777);
+
+    /* Body/Body S */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px; /* 177.778% */
+  }
+
+  .container-cotact-us-form {
+    display: flex;
+    width: 650px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    background: var(--base-color-bg-primary, #FCFAF4);
+    margin-left: 200px;
+  }
+
+  .container-cotact-us-form-grid {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .container-cotact-us-form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top:50px;
+  }
+
+  .container-cotact-us-form-group label {
+    margin-bottom: 0.5rem;
+    color: var(--input-color-helper-text-default, #332D2D);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px; /* 100% */
+  }
+
+  .container-cotact-us-form-group input,
+  .container-cotact-us-form-group textarea {
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 0px;
+    transition: border-color 0.2s;
+    background: var(--base-color-bg-primary, #FCFAF4);
+    
+  }
+  .container-cotact-us-form-group textarea {
+    display: flex;
+    width: 650px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    background: var(--input-color-bg-default, rgba(255, 255, 255, 0.00));
+    color: var(--input-color-placeholder-text-default, #979797);
+
+
+    /* Body/Body XS */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px; /* 150% */
+   
+  }
+
+
+ 
+
+  .container-cotact-us-checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .container-cotact-us-checkbox-item {
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .container-cotact-us-checkbox-item input {
+    margin-right: 0.5rem;
+    width: 24px; /* Set a width for the checkbox */
+    height: 24px; /* Set a height for the checkbox */
+    transform: scale(1.5); /* Scale the checkbox to make it larger */
+    cursor: pointer; /* Add a pointer cursor for better UX */
+  }
+  .container-cotact-us-checkbox-item label {
+    margin-top: 12px;
+    color: var(--base-color-text-primary, #332D2D);
+
+/* Body/Body XXS */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px; /* 150% */
+  }
+
+  .container-cotact-us-form-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .container-cotact-us-form-actions button {
+    display: inline-flex;
+    padding: 16px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 32px;
+    background: var(--button-color-bg-default, #7B7092);
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: white;
+    
+  }
+  .container-cotact-us-form-group .input-email {
+    display: flex;
+    width: 429px;
+    padding: 12px 0px;
+    align-items: center;
+    border-bottom: 1px solid var(--input-color-border-default, #C7AFA3);
+    background: var(--input-color-bg-default, rgba(255, 255, 255, 0.00));
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  .container-cotact-us-form-group #name {
+    display: flex;
+    padding: 12px 0px;
+    align-items: center;
+    align-self: stretch;
+    border-bottom: 1px solid var(--input-color-border-default, #C7AFA3);
+    background: var(--input-color-bg-default, rgba(255, 255, 255, 0.00));
+    border-left: none;
+    border-right: none;
+    border-top: none;
+  }
+  .container-cotact-us-form-actions button:hover {
+    background-color: #4b5563;
+  }
+  .text-var {
+    color: var(--base-color-text-tertiary, #777);
+
+    /* Body/Body XXS */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px; /* 150% */
+  }
+
+
+
+  .decorative-contact-us-container-right {
+    position: absolute;
+
+    width: 340px;
+    height: 340px;
+    flex-shrink: 0; /* Adjust based on your layout needs */
+    border-radius: 50%; 
+
+}
+.decorative-contact-us-container-right {
+    bottom: 600px;
+   
+    transform: translate(50.50%, 218%);
+    opacity: 0.5;
+}
+
+.decorative-contact-us-container-right img {
+    width: 350px;
+
+    height: 350px;
+    flex-shrink: 0;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 50%; /* Inherit the circular shape from the container */
+    filter: brightness(1.5); /* Increase brightness by 20% */
+
+}
+
+
+@media (max-width: 768px) {
+  .hero-seatedfold {
+    height: 300px; /* Adjust the height for smaller screens */
+    margin-top: 50px; /* Reduce margin for mobile */
+    background-size: cover; /* Ensure background is covered properly */
+    background-position: center;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  .hero-text-seatedfold {
+    top: 65%; /* Adjust the position of the text for mobile */
+    transform: translate(-50%, -50%);
+    padding: 0 20px; /* Add padding for better spacing */
+  }
+
+  .hero-text-seatedfold h1 {
+    width: 110%;
+    font-size: 40px; /* Reduce font size for mobile */
+    line-height: 50px;
+  }
+
+  .hero-text-seatedfold p {
+    font-size: 1.2rem; /* Smaller font size for mobile */
+  }
+
+  .hero-text-seatedfold a {
+    padding: 10px 20px; /* Smaller button for mobile */
+    font-size: 0.9rem;
+  }
+
+  .logo-seatedfold {
+    top: 8%; /* Adjust logo position for mobile */
+    transform: translate(-50%, -50%) rotate(90deg) scale(0.6); /* Scale down the logo */
+  }
+
+  .hero-seatedfold::before {
+    background: rgba(51, 45, 45, 0.5); /* Darker overlay for better contrast */
+  }
+}
+
+/* Extra small mobile view (e.g., phones in portrait mode) */
+@media (max-width: 480px) {
+  .hero-seatedfold {
+    height: 250px; /* Further reduce height for very small screens */
+    transform: translate(0%, 5%) rotate(0deg) ; /* Scale down the logo */
+  
+  }
+
+  .hero-text-seatedfold {
+    top: 63%; /* Adjust positioning to fit smaller screens */
+  }
+
+  .hero-text-seatedfold h1 {
+    font-size: 30px; /* Further reduce font size for extra small devices */
+    line-height: 40px;
+  }
+
+  .hero-text-seatedfold a {
+    padding: 8px 16px; /* Smaller button padding */
+    font-size: 0.8rem; /* Smaller font size for the button */
+  }
+
+  .logo-seatedfold {
+    top: 4%; /* Further adjust logo position */
+    transform: translate(-50%, -50%) rotate(90deg) scale(0.5); /* Further scale down logo */
+  }
+}
+/* For screens up to 768px (tablets and mobile devices) */
+@media (max-width: 768px) {
+  /* Adjust the container layout for smaller screens */
+  .bg-container {
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-us-container {
+    flex-direction: column;
+    width: 100%;
+   
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .bg {
+
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .decorative-contact-us-container-right {
+    display: none;
+  }
+
+  /* Adjust typography and form layout */
+  .text-2xl, .text-xl {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .mb-4 {
+    margin: 15px 0;
+    width: 100%;
+  }
+
+  .flex {
+    justify-content: center;
+  }
+
+  .w-6, .h-6 {
+    width: 100%;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  /* Container adjustments */
+  .container-cotact-us-form {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+   
+    box-sizing: border-box;
+    
+  }
+
+  .container-cotact-us-form-grid {
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    
+  }
+
+  /* Form group adjustments */
+  .container-cotact-us-form-group {
+    width: 400%;
+    margin: 30px 0 0px 20px;
+    margin-bottom: 20px;
+  }
+
+  .container-cotact-us-form-group input,
+  .container-cotact-us-form-group textarea,
+  .container-cotact-us-form-group .input-email {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    font-size: 16px;
+  }
+
+  .container-cotact-us-form-group textarea {
+    height: 100px;
+    resize: none;
+  }
+
+  /* Checkbox group adjustments */
+  .container-cotact-us-checkbox-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .container-cotact-us-checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .container-cotact-us-checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  /* Button adjustments */
+  .container-cotact-us-form-actions {
+    justify-content: center;
+    width: 400%;
+    margin: 30px 0 50px 20px;
+
+  }
+
+  .container-cotact-us-form-actions button {
+    width: 100%;
+    padding: 16px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    background-color: #7B7092;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+/* Additional breakpoint for very small devices */
+@media (max-width: 320px) {
+  .bg-container,
+  .contact-us-container,
+  .container-cotact-us-form {
+    padding: 10px;
+  }
+
+  .text-2xl, .text-xl {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .container-cotact-us-form-actions button {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+}
